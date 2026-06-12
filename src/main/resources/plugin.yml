@@ -1,0 +1,27 @@
+name: LifeStealRanks
+version: 2.0.0
+main: com.unstable.lifestealranks.LifeStealRanks
+description: Rank, aura, and kill animation system for Folia
+authors:
+  - UnstableLifestealSmp
+api-version: "1.21"
+
+commands:
+  rank:
+    description: Manage player ranks
+    usage: /rank <list|check|give|remove> [player] [rank]
+    aliases:
+      - lsr
+  aura:
+    description: Manage player auras
+    usage: /aura [toggle|set] [aura]
+    aliases:
+      - auras
+
+permissions:
+  lsr.admin:
+    description: Admin commands for LifeStealRanks
+    default: op
+  lsr.use:
+    description: Use auras and ranks
+    default: true

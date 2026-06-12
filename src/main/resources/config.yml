@@ -1,0 +1,75 @@
+# LifeStealRanks v2.0.0 Configuration
+
+# Aura Settings
+aura:
+  # Radius for aura particle rendering
+  radius: 0.65
+  # Render interval in ticks (20 ticks = 1 second)
+  render-interval: 1
+
+# Kill Animation Settings
+kill-animations:
+  DEFAULT:
+    sound:
+      type: ENTITY_PLAYER_LEVELUP
+      volume: 0.5
+      pitch: 1.0
+    particles:
+      type: SMOKE
+      count: 10
+      spread: 0.3
+    title:
+      line1: "You were slayed"
+      line2: "by Default"
+
+  VIP:
+    sound:
+      type: ENTITY_EXPERIENCE_ORB_PICKUP
+      volume: 1.0
+      pitch: 1.2
+    particles:
+      type: FLAME
+      count: 20
+      spread: 0.5
+    title:
+      line1: "Destroyed by a VIP"
+      line2: "Green dominance"
+
+  VIP_PLUS:
+    sound:
+      type: ENTITY_PLAYER_LEVELUP
+      volume: 1.2
+      pitch: 1.5
+    particles:
+      type: SOUL_FIRE_FLAME
+      count: 25
+      spread: 0.6
+    title:
+      line1: "Crushed by VIP+"
+      line2: "Aqua power"
+
+  MVP:
+    sound:
+      type: ITEM_BREAK
+      volume: 1.5
+      pitch: 0.8
+    particles:
+      type: DRAGON_BREATH
+      count: 30
+      spread: 0.7
+    title:
+      line1: "Annihilated by MVP"
+      line2: "Pink perfection"
+
+  MVP_PLUS:
+    sound:
+      type: ENTITY_WITHER_DEATH
+      volume: 2.0
+      pitch: 0.5
+    particles:
+      type: EXPLOSION
+      count: 40
+      spread: 1.0
+    title:
+      line1: "Obliterated by MVP+"
+      line2: "Gold supremacy"
